@@ -21,7 +21,7 @@ const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 i18n.configure({
-  locales: ["en", "es", "ko", "fr", "tr", "pt_br", "zh_cn", "zh_tw"],
+  locales: ["en"],
   directory: path.join(__dirname, "locales"),
   defaultLocale: "en",
   objectNotation: true,
@@ -50,7 +50,7 @@ i18n.configure({
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`${PREFIX}help and ${PREFIX}play and XCALIBUR'S heart 💕`, { type: "LISTENING" });
+  client.user.setActivity(`${PREFIX}help and ${PREFIX}play and XCALIBUR'S Heart`, { type: "LISTENING" });
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
